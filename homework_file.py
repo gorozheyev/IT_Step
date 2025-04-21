@@ -5,6 +5,7 @@ with open("simple.txt", 'r') as myfile:
     text = myfile.read()
     list_of_words = text.replace(",", "").replace(".", "").replace(":", "").replace("!", "").replace("?", "").lower().split()
     print("количество слов в файле: ", len(list_of_words))
+
     for i in list_of_words:
         if i not in unique_words:
             unique_words.append(i)
